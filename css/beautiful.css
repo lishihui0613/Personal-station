@@ -1,0 +1,1324 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:  'Arial';
+}
+img{
+    display: block;
+    border: none;
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.navHead .top{
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+
+}
+.navHead .headFirst {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navHead .headFirst ul{
+    line-height: 30px;
+    float: right;
+}
+.navHead .headFirst ul li{
+    float: left;
+}
+.navHead .headFirst ul li a{
+    height: 20px;
+    line-height: 20px;
+    border-left: 1px dotted #ccc;
+    padding: 0 15px;
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+}
+.headFirst ul li a:hover{
+    color: #ff6699;
+}
+.headFirst ul li a em{
+    display: inline-block;
+    background: url("../img/mls_global140607.png") no-repeat;
+    vertical-align: -3px;
+    height: 16px;
+}
+.headFirst ul li a .weixin{
+    width: 16px;
+    margin-right: 6px;
+    background: url("../img/i_wx_single.png") no-repeat;
+
+}
+.headFirst ul li a .qq{
+    width: 16px;
+    margin-right: 6px;
+    background-position: -189px -21px;
+}
+.headFirst ul li a .cart{
+    width: 24px;
+    background-position: -1px -164px;
+}
+.headFirst ul li a .order{
+    width: 24px;
+    background-position: -218px -44px;
+}
+.headFirst ul li a .load{
+    width: 24px;
+    background-position: -164px -45px;
+}
+.headFirst ul li a i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+}
+.headFirst ul li a i.sanjiao{
+    border-top-color: #333;
+    margin-left: 2px;
+}
+.headFirst ul .location{
+    position: relative;
+}
+.headFirst ul .location:hover .downApp{
+    display: block;
+}
+.headFirst .downApp{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 10;
+    width: 245px;
+    height: 85px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.headFirst .downApp img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 5px 10px;
+}
+.headFirst .downApp .intr{
+    font-size: 14px;
+    color: #f69;
+    padding-top: 11px;
+}
+.headFirst .downApp p{
+    color: #333;
+}
+.navHead .inner{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+}
+.navHead .inner a img{
+    padding-top: 34px;
+    width: 204px;
+    height: 52px;
+    float: left;
+}
+.navHead .inner .search{
+    padding: 20px 0 0 156px;
+    float: left;
+}
+.navHead .inner .search .searchTab span{
+    width: 56px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 12px;
+    cursor: pointer;
+}
+.navHead .inner .search .searchTab span.active{
+    color: #fff;
+    background: #ff6699;
+}
+.navHead .inner .search .searchBox input{
+    width: 435px;
+    height: 28px;
+    border: 2px solid #ff6699;
+    outline: none;
+    float: left;
+    padding-left: 10px;/*让光标和左边输入框有距离*/
+}
+.search .searchBox{
+    position: relative;
+}
+.search .searchBox em{
+    width: 70px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    background: url("../img/search.png") no-repeat center center #f69;
+    cursor: pointer;
+}
+.search .searchBox .list{
+    width: 447px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 31px;
+    display: none;
+    background: #fff;
+    z-index: 1;
+}
+.search .searchBox .list li{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.searchBox .list li:hover{
+    background: #f2f0f1;
+}
+.searchBox .list li a{
+    padding-left: 8px;
+    color: #666;
+    display: inline-block;
+    width: 250px;
+}
+.searchBox .list li i{
+    font-style: normal;
+    float: right;
+    padding-right: 13px;
+    color: #666;
+}
+.search .hotWord{
+    padding-top: 9px;
+    font-size: 12px;
+}
+.search .hotWord a{
+    padding-right: 9px;
+    color: #666;
+}
+.search .hotWord a.color{
+    color: #f69;
+}
+.search .hotWord a:hover{
+    color: #f69;
+}
+/*主要内容部分*/
+.navList{
+    height: 49px;
+    border-bottom: 1px solid #f69;
+    background: #fff;
+    width: 100%;
+    /*position: absolute;*/
+}
+.navList .nList{
+    width: 1200px;
+    height: 49px;
+    margin: 0 auto;
+}
+.navList .nList ul{
+    position: relative;
+}
+.navList .nList ul li{
+    float: left;
+    margin-right: 12px;
+}
+.nList ul li.on{
+    border-bottom: 3px solid #f69;
+
+}
+.nList ul li:hover{
+    border-bottom: 3px solid #f69;
+}
+.nList ul a{
+    padding: 15px 15px;
+    display: block;
+    font-size: 15px;
+    color: #333;
+    font-weight: bolder;
+}
+.nList ul a:hover{
+    color: #f69;
+}
+.nList ul a.on{
+    color: #f69;
+}
+.nList ul i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+}
+.nList ul i.down{
+    margin-left: 12px;
+    border-top-color: #333;
+}
+.nList ul i.up{
+    margin: 0 0 5px 12px;
+    border-bottom-color: #f69;
+}
+.nList ul .more{
+    width: 80px;
+}
+.nList ul .more:hover{
+    border-bottom: none;
+}
+.nList ul .more:hover dl{
+    display: block;
+}
+.nList ul dl{
+    z-index: 10;
+    position: absolute;
+    margin-left: -30px;
+    width: 122px;
+    border: 1px solid #eee;
+    border-top: none;
+    background: #fff;
+    display: none;
+}
+.nList ul dl dt{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.nList ul dl dt:hover{
+    background: #eee;
+    color: #f69;
+}
+.nList ul li .line{
+    margin-top: 15px;
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #d6d7d8;
+}
+/*左侧list部分*/
+.container{
+    width: 1200px;
+    height: 574px;
+    margin: 0 auto;
+}
+.container .cLeft{
+    width: 238px;
+    height: 572px;
+    border: 1px solid #eee;
+    float: left;
+}
+.cLeft li .list_cont{
+    position: relative;
+    width: 191px;
+    height: 96px;
+    padding: 12px 0 6px;
+    border-bottom: 1px dotted #eee;
+    margin-left: 20px;
+}
+.cLeft .hoverli:hover .list_cont{
+    border-bottom: 1px dotted transparent;
+}
+.cLeft .li2:hover .list1{
+    border-bottom: 1px dotted transparent;
+}
+.cLeft .hoverli:hover{
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    background:#fff;
+    z-index:100;
+    width:240px;
+}
+.cLeft .hoverli:hover .nav_list{
+    display: block;
+}
+.cLeft li .list_cont:hover li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #eee;
+    background: #fff;
+    width: 239px;
+}
+.cLeft li .list_cont h3 a{
+    font-size: 14px;
+    color: #f69;
+}
+.list_cont .listP{
+    height: 72px;
+    line-height: 24px;
+    white-space: nowrap;
+    width: 190px;
+    padding-top: 5px;
+}
+.list_cont .listP a{
+    float: left;
+    margin-right: 14px;
+    font-size: 12px;
+    color: #666;
+}
+.list_cont .listP a:hover{
+    color: #f69;
+}
+.listP a.on{
+    color: #f69;
+}
+.list_cont i{
+    position: absolute;
+    top: 48px;
+    right: -5px;
+    font-size: 14px;
+    display: inline-block;
+    width: 7px;
+    height: 16px;
+    color: #999;
+    font-style: normal;
+}
+.cLeft li{
+    position: relative;
+}
+.cLeft li .last{
+    border-bottom: 0;
+}
+.nav_list{
+    display: none;
+    position: absolute;
+    left: 238px;
+    top: -1px;
+    border: 1px solid #eee;
+    padding: 9px 20px;
+    z-index: 50;
+    background: #fff;
+}
+.nav_list h4{
+    font-size: 14px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+}
+.nav_list h4 a{
+    padding-top: 3px;
+    display: block;
+    color: #666;
+}
+.nav_list h4 a:hover,.nav_list p a:hover{
+    color: #f69;
+}
+.nav_list p{
+    line-height: 24px;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+    float: left;
+}
+.nav_list p a{
+    font-size: 12px;
+    color: #666;
+    margin-right: 15px;
+}
+
+/*轮播图*/
+.box{
+    width: 960px;
+    height: 420px;
+    position: relative;
+    float: left;
+}
+.banner div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    filter:alpha(opacity:0);
+}
+.banner div img{
+    width: 100%;
+    height: 100%;
+}
+.box ul{
+   position: absolute;
+    bottom: 20px;
+    right: 440px;
+    z-index: 30;
+}
+.box ul li{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    float: left;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.box ul li.bg{
+    border: 2px solid #fff;
+    background: transparent;
+}
+.box a{
+    position: absolute;
+    top: 188px;
+    width: 34px;
+    height: 44px;
+    z-index: 10;
+    display: none;
+}
+.box a.btnLeft{
+    left: 0;
+    background: url("../img/bnr_btn_left1.png") no-repeat;
+}
+.box a.btnRight{
+    right: 0;
+    background: url("../img/bnr_btn_right1.png") no-repeat;
+}
+.photo img{
+    width: 182px;
+    height: 145px;
+    float: left;
+    padding: 11px 0 0 10px;
+}
+/*详情信息部分*/
+.autoWrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.module{
+    margin-top: 40px;
+}
+.module h2{
+    float: left;
+    font-size: 18px;
+    color: #666;
+}
+.module h2 span{
+    font-size: 12px;
+    color: #999;
+    margin: 0 4px 0 7px;
+    font-weight: normal;
+}
+.module .operate{
+    float: left;
+    width: 1016px;
+    height: 19px;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+}
+.module .operate a{
+    font-size: 12px;
+    color: #666;
+}
+.module .operate a:hover{
+    color: #f69;
+}
+.module .operate i{
+    background: url("../img/cor.cg.png") no-repeat -13px -184px;
+    display: inline-block;
+    width: 5px;
+    height: 6px;
+    margin-left: 6px;
+}
+.cont{
+    margin-top: 20px;
+
+}
+
+.cont a img{
+    width: 183px;
+    height: 230px;
+    float: left;
+    /*margin-left: 20px;*/
+}
+.cont a .position{
+    margin-left: 20px;
+}
+
+
+.cont .list{
+    width: 224px;
+    float: left;
+    padding-bottom: 38px;
+    margin-left: 20px;
+}
+.cont .dele{
+    margin-left: 0;
+}
+/*.con .bottom{
+    padding-bottom: 0;
+}*/
+.list a img{
+    width: 100%;
+    height: 340px;
+    margin-bottom: 15px;
+}
+.list .price{
+    font-size: 14px;
+    color: #f69;
+    font-weight: bold;
+}
+.list .like{
+    font-style: normal;
+    float: right;
+    background: url("../img/cor.cg.png") no-repeat -8px -26px;
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    color: #999;
+    margin-right: 3px;
+}
+.list em{
+    font-style: normal;
+    font-size: 12px;
+    float: right;
+    color: #999;
+}
+.list p a{
+    width: 100%;
+    padding-top: 8px;
+    display: block;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list p a:hover{
+    color: #f69;
+}
+
+.module .ope{
+    width: 1050px;
+}
+
+.item{
+    width: 386px;
+    float: left;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+.dele{
+    margin-left: 0;
+}
+.item img{
+    width: 386px;
+    height: 386px;
+    margin-bottom: 19px;
+}
+.item .lprice i{
+    line-height: 24px;
+    font-style: normal;
+    font-size: 18px;
+    color: #f69;
+}
+.item .lprice span{
+    padding-left: 25px;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+}
+.item .tit{
+    line-height: 24px;
+}
+.item .tit a{
+    font-size: 14px;
+    color: #666;
+}
+.item .tit a:hover{
+    color: #f69;
+}
+.item .subtit{
+    line-height: 24px;
+    font-size: 12px;
+    color: #999;
+}
+.item .tag{
+    line-height: 24px;
+}
+.item .tag span{
+    background: url("../img/cor.cg.png") no-repeat 0 0;
+    /*padding-top: 3px;*/
+    width: 28px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: -5px;
+}
+.item .tag a{
+    font-size: 12px;
+    color: #f69;
+    margin-left: 14px;
+}
+.tab{
+    text-align: center;
+
+}
+.tab div{
+    display: inline-block;
+    margin: 22px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tab div.active{
+    color: #f69;
+    border-bottom: 2px solid #f69;;
+}
+.tabitem .tItem img{
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.tabitem .tItem img.dele{
+    margin-left: 0;
+}
+.autoWrap .chan{
+    text-align: center;
+    position: relative;
+}
+.autoWrap .chan img{
+    width: 386px;
+    height: 333px;
+}
+.chan .store a{
+    font-size: 22px;
+    color: #666;
+}
+.chan .tit{
+    font-size: 12px;
+    color: #999;
+}
+.chan .subtit .font{
+    color: #666;
+    margin-left: 20px;
+}
+.chan .subtit .none{
+    margin-left: 0;
+}
+.chan .subtit i{
+    font-style: normal;
+    color: #f69;
+    margin-left: 3px;
+}
+.chan:hover .mask{
+    display: block;
+}
+.chan .mask{
+    display: none;
+}
+.chan .mask .bg{
+    background: #333;
+    opacity:.5;
+    width: 386px;
+    height: 333px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    filter: alpha(opacity=50);
+}
+.chan .mask .add,.chan .mask .go{
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    left: 132px;
+    top: 110px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.chan .mask .add:hover{
+    color: #333;
+}
+.chan .mask .add:hover .unadd {
+    display: block;
+}
+.chan .mask .unadd{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background: #fff;
+}
+.chan .mask .go{
+    top: 180px;
+}
+.chan .mask .go:hover{
+    background: #fff;
+    opacity: 1;
+}
+.chan .mask .go:hover a{
+    opacity: 1;
+    color: #333;
+}
+.chan .mask .go a{
+    color: #fff;
+}
+.choose{
+    margin-top: 20px;
+}
+.module .oline{
+    width: 1007px;
+}
+.module .oline em{
+    font-style: normal;
+    background: url("../img/cor.cg.png") no-repeat -9px -205px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+}
+
+.footer{
+    height: 286px;
+    background: #f5f5f5;
+    margin-top: -23px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+.inner{
+    margin: 0 auto;
+    width: 1200px;
+}
+.inner .hotline{
+    float: left;
+    background: url("../img/mls_global140607.png") no-repeat 0 -114px;
+    width: 36px;
+    height: 40px;
+    margin: 3px 13px 0 0;
+}
+.inner dl{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: #666;
+}
+.inner dl dt{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.inner dl dt.hotPhone{
+    font-size: 20px;
+    font-weight: 100;
+}
+.inner dl dd{
+    font-size: 12px;
+
+}
+.inner dl dd a{
+    color: #666;
+}
+.inner dl dd a:hover{
+    color: #f69;
+}
+.inner dl dd span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 5px 5px 0 0;
+    vertical-align: -4px;
+    background: url("../img/mls_global140607.png") no-repeat;
+}
+.inner dl dd .sina{
+    background-position: 0 -21px;
+}
+.inner dl dd .qzone{
+    background-position: -73px -21px;
+}
+.inner dl dd .tencent{
+    background-position: -49px -21px;
+}
+.inner dl .weixin{
+    width: 115px;
+    height: 115px;
+    margin: 13px 0 9px 0;
+}
+.friendlink{
+    border-top: 1px solid #e6e6e6;
+    line-height: 20px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    width: 1180px;
+}
+.friendlink span{
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+.friendlink ul{
+    float: left;
+}
+.friendlink ul li{
+    display: none;
+}
+.friendlink ul li.show{
+    display: block;
+}
+.friendlink ul li a{
+    font-size: 12px;
+    color: #666;
+}
+.friendlink .fmore{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.friendlink .fmore:hover{
+    color: #f69;
+}
+.record{
+    margin: 0 auto;
+    width: 1200px;
+    border-top: 1px solid #e6e6e6;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #666;
+}
+.record a{
+    color: #666;
+}
+.record a:hover{
+    color: #f69;
+}
+
+/*首页*/
+.wrap{
+    width: 1349px;
+    height: 707px;
+    padding-bottom: 50px;
+    background: -webkit-linear-gradient(top,#fefcfd,#fdf9f6,#f6e9e1,#edd7ca,#ead6cd,#f6dec2,#f7dcbe);
+}
+.regWrap{
+    width: 980px;
+    margin: 0 auto;
+}
+.regWrap .head{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: block;
+}
+.regWrap .head .regLogin{
+    display: inline-block;
+    width: 157px;
+    height: 56px;
+    margin-right: 25px;
+    background: url("../img/register_logo.png") no-repeat;
+}
+.regWrap .head .welcome{
+    display: inline-block;
+    width: 336px;
+    height: 50px;
+    background: url("../img/welcome_txt.png") no-repeat;
+}
+.wrap .regWrap .main{
+    background-color: #fff;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 80px;
+}
+.regWrap .main .adWrap{
+    float: left;
+}
+.main .adWrap img{
+    width: 370px;
+    height: 353px;
+}
+.main .login_form{
+    float: right;
+    width: 320px;
+    margin-right: 30px;
+}
+.loginForm h3{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: #666;
+}
+.loginForm h3 a{
+    color: #f69;
+    text-decoration: underline;
+    float: right;
+    font-weight: normal;
+    padding-right: 3px;
+}
+.loginForm .loginList{
+    min-height: 68px;
+}
+.loginForm .loginBox{
+    position: relative;
+    line-height: 30px;
+}
+.loginForm .loginBox input{
+    outline: 0;
+    word-wrap: break-word;
+}
+.loginForm .loginBox .loginTxt{
+    width: 280px;
+    height: 36px;
+    border: 1px solid #ddd;
+    color: #999;
+    padding-left: 35px;
+}
+.loginForm .loginBox .lIcon{
+    background: url("../img/login_icon-4.png") no-repeat 0 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+.loginForm .loginBox .pIcon{
+    background: url("../img/login_icon-4.png") no-repeat -25px 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+.loginBox .title{
+    font-size: 12px;
+    color: #666;
+}
+.loginBox .pic{
+    margin-bottom: 10px;
+    position: relative;
+}
+.pic .picList li{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: bottom;
+    margin-right: 1px;
+    background: url('../img/loading1.gif') no-repeat center;
+    background-size: cover;
+}
+.pic .picList li img{
+    width: 100%;
+    height: 100%;
+}
+.pic .changePic{
+    position: absolute;
+    right: 20px;
+    bottom: -8px;
+    font-size: 12px;
+    color: #f69;
+    text-decoration: underline;
+}
+.loginBox .loginBtn{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    border: 0;
+    width: 320px;
+    height: 46px;
+    background-color: #f69;
+    line-height: 46px;
+    cursor: pointer;
+}
+.loginBox .remember{
+    float: left;
+    padding-right: 16px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 12px;
+}
+.loginBox .remember .check{
+    margin-left: 4px;
+}
+.loginBox .remember a{
+    color: #666;
+    margin-left: 3px;
+}
+.loginBox .forgetPwd{
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc;
+    text-decoration: underline;
+    padding-bottom: 4px;
+}
+.forgetPwd a{
+    text-decoration: underline;
+    color: #f69;
+    font-size: 12px;
+}
+.fastLogin p{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.fastWay{
+    padding-bottom: 20px;
+}
+.fastWay a{
+    float: left;
+    width: 100px;
+    height: 35px;
+    background: url("../img/login_fast_new.png") no-repeat;
+}
+.fastWay a.qqWay{
+    background-position: 0 -120px;
+}
+.fastWay a.sinaWay{
+    background-position: 0 -160px;
+    margin: 0 10px 0 10px;
+}
+.fastWay a.weixinWay{
+    background-position: 0 -200px;
+}
+.moreWay{
+    line-height: 26px;
+    font-size: 12px;
+    color: #666;
+}
+.moreWay p{
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+.moreWay .moreWayList{
+    float: left;
+}
+.moreWayList a{
+    background: url("../img/login_icon-4.png") no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.moreWayList a.txweibo{
+     background-position: -125px -25px;
+ }
+.moreWayList a.douban{
+    background-position: -100px -25px;
+}
+.moreWayList a.renren{
+    background-position: -150px -25px;
+}
+.moreWayList a.baidu{
+    background-position: -75px -25px;
+}
+.notice{
+    background: url("../img/notice_m.png") no-repeat 0 center;
+    line-height: 30px;
+    color: #999;
+    padding-left: 22px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.notice a{
+    color: #f69;
+    text-decoration: underline;
+}
+/*--右侧导航--*/
+.rightslide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 38px;
+    height: 690px;
+    background: #f6f6f6;
+    border-left: 1px solid #ddd;
+    z-index: 2000;
+}
+.rightslide .options{
+    width: 100%;
+    position: absolute;
+    top: 62px;
+    border-top: 1px solid #ddd;
+}
+.options .download{
+    height: 70px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-phone-1.png) no-repeat 13px 10px;
+    position: relative;
+    padding-top: 41px;
+}
+.download{
+    display: block;
+    width: 10px;
+    padding-top: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+.download:hover{
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-phone-white-1.png) no-repeat 13px 10px;
+    background-color: #F33866;
+    color: #fff;
+}
+.download:hover .downImg{
+    display: block;
+}
+.download span{
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: -18px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+.download .downImg{
+    width: 140px;
+    height: 140px;
+    padding: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    right: 38px;
+    top: 0;
+    display: none;
+}
+.downImg:before{
+    border:10px solid transparent;
+    border-left-color: #fff;
+    content: '';
+    height: 0;
+    left: 100%;
+    position: absolute;
+    width: 0;
+}
+
+.download .downImg img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+}
+.options .cart,.options .news,.options .coupon,.options .collect,.options .footprint{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.2;
+}
+.options .cart a{
+    height: 61px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-cart.png) no-repeat 10px 9px;
+    display: block;
+    width: 10px;
+    padding-top: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #666;
+    font-size: 12px;
+}
+.options .cart a:hover{
+    color: #fff;
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-cart-white.png) no-repeat 10px 9px;
+}
+.options .news a{
+    height: 52px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-service.png) no-repeat 11px 15px;
+    display: block;
+    width: 10px;
+    padding-top: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #666;
+    font-size: 12px;
+}
+.options .news a:hover{
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-service-white.png) no-repeat 11px 15px;
+    color: #fff;
+}
+
+.options .coupon a{
+    height: 52px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-coupon.png) no-repeat 11px 15px;
+    display: block;
+    width: 10px;
+    padding-top: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #666;
+    font-size: 12px;
+}
+.options .coupon a:hover{
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-coupon-white.png) no-repeat 11px 15px;
+    color: #fff;
+}
+.options .collect a{
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-mark-new.png) no-repeat 10px 15px;
+    display: block;
+    width: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #666;
+    font-size: 12px;
+    height: 46px;
+    padding-top: 41px
+}
+.options .collect a:hover{
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-mark-white.png) no-repeat 11px 15px;
+    color: #fff;
+}
+
+.options .footprint a{
+    display: block;
+    width: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #666;
+    font-size: 12px;
+    height: 49px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-footprint-new.png) no-repeat 12px 15px;
+    padding-top: 44px;
+}
+.options .footprint a:hover{
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-footprint-white.png) no-repeat 11px 15px;
+    color: #fff;
+}
+.options .toTop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 38px;
+    height: 40px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+    background: #F8F8F8 url(http://i.meilishuo.net/css/images/biuSidebar/biu-go2top.png) no-repeat 12px 16px;
+
+}
+.options .toTop:hover{
+    cursor: pointer;
+    background:#F33866 url(http://i.meilishuo.net/css/images/biuSidebar/biu-go2top-white.png) no-repeat 12px 16px;
+}
